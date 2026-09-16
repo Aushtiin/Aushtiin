@@ -1,4 +1,4 @@
-name: generate snake
+name: sierpinski year
 on:
   schedule:
     - cron: "0 */12 * * *"
@@ -10,16 +10,19 @@ permissions:
   contents: write
 
 jobs:
-  snake:
+  render:
     runs-on: ubuntu-latest
     timeout-minutes: 10
     steps:
-      - uses: Platane/snk/svg-only@v3
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
         with:
-          github_user_name: Aushtiin
-          outputs: |
-            dist/github-contribution-grid-snake.svg
-            dist/github-contribution-grid-snake-dark.svg?palette=github-dark
+          node-version: 20
+      - run: node scripts/sierpinski-year.mjs
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GH_USER: Aushtiin
+          OUT_DIR: dist
       - uses: crazy-max/ghaction-github-pages@v4
         with:
           target_branch: output

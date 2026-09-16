@@ -30,8 +30,8 @@ some of these were assignments. the obsession is all mine.
 **`lyric-sentiment/`**: reads song lyrics and tells you how they feel.
 
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/Aushtiin/Aushtiin/output/github-contribution-grid-snake-dark.svg" />
-  <img alt="snake eating my contribution graph" src="https://raw.githubusercontent.com/Aushtiin/Aushtiin/output/github-contribution-grid-snake.svg" />
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/Aushtiin/Aushtiin/output/sierpinski-year-dark.svg" />
+  <img alt="a year of contributions folded into a sierpinski triangle" src="https://raw.githubusercontent.com/Aushtiin/Aushtiin/output/sierpinski-year.svg" />
 </picture>
 
 ```bash
